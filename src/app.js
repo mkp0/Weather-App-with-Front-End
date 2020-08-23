@@ -10,6 +10,8 @@ const publicPath = path.join(__dirname, "../public");
 const viewPath = path.join(__dirname, "/templets/views");
 const partialsPath = path.join(__dirname, "/templets/partials");
 
+const port = process.env.PORT || 3000;
+
 app.set("view engine", "hbs");
 //Changing view directory to new directory i.e viewPath which is points to templets
 app.set("views", viewPath);
@@ -73,6 +75,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("Server is Running in Port : " + 3000);
 });
