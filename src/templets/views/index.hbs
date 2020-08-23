@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/icon1.png">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get the weather</p>
+        <form>
+            <input placeholder="Enter city name">
+            <button>Search</button>
+        </form>
+        <p id="msg1" style="font-weight:900;;width:50%;"></p>
+        <p id="msg2" style="font-weight:900;;width:50%;"></p>
+    </div>
+
+    {{>footer}}
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
