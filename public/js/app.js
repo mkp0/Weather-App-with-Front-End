@@ -13,12 +13,13 @@ weatherForm.addEventListener("submit", (e) => {
     res.json().then((data) => {
       if (data.Place) {
         msg1.innerHTML =
-          data.Weather +
-          "</br>" +
           data.Place +
           "</br>" +
+          " " +
+          data.Weather +
+          "</br>" +
           data.Temp +
-          " F" +
+          " F";
       }
 
       if (data[0].error) {

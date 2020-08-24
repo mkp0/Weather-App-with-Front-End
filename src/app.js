@@ -40,6 +40,7 @@ app.get("/weather", (req, res) => {
         res.send({ error: error });
         return;
       }
+      console.log(data);
       res.send({
         Place: data1.PlaceName,
         Weather: data.weather[0].description,
