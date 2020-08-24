@@ -19,7 +19,7 @@ weatherForm.addEventListener("submit", (e) => {
           data.Weather +
           "</br>" +
           data.Temp +
-          " F";
+          " K";
       }
 
       if (data[0].error) {
