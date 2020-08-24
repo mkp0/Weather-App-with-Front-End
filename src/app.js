@@ -43,6 +43,7 @@ app.get("/weather", (req, res) => {
       res.send({
         Place: data1.PlaceName,
         Weather: data.weather[0].description,
+        Temp: data.main.temp,
       });
     });
   });
